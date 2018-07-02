@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  {% include head.html %}
+  <body>
+  	{% include navigator.html %}
+  	<div id="post_list">
+  		<div class="container">
+  			<div class="center">
+  				{% for category in site.categories %}
+  				<h1>{{ category | first}}</h1>
+  				<!-- <span>{{ category | last | size}}</span> -->
+  				<ul class="arc-list">
+  					{% for post in category.last %}
+  					<li>
+  						{{ post.date | date:"%d/%m/%Y" }}
+  						<a href="{{ post.url }}">{{ post.title }}</a>
+  					</li>
+  					{% endfor %}
+  				</ul>
+  				{% endfor %}
+  				<!-- <h1>Algorithms</h1>
+          <li><a href="">Coursera Algorithms——week(1) Union Find</a></li>
+          <li><a href="">Coursera Algorithms——week(2) Deques and Randomized Queues</a></li>
+          <h1>Meachine Learning</h1>
+          <li><a href=""></a></li>
+          <h1>Leetcode per day</h1>
+          <li><a href="">five intresting questions in June</a></li> -->
+  			</div>
+  		</div>
+  	</div>
+  </body>

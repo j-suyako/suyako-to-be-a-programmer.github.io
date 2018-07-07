@@ -1,6 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
 
+.post a{color: #222;}
+
+.post a:link {text-decoration: underline;}
+.post a:visited {text-decoration: none;}
+.post a:hover {text-decoration: none;}
+.post a:active {text-decoration: none;}
+
+.post p
+{
+	text-align: justify;
+}
+
 #hello_world
 {
 	padding: 50px 0;

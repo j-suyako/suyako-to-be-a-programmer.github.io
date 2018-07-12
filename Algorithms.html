@@ -1,0 +1,11 @@
+---
+layout: lists
+permalink: /Algorithms
+---
+
+{% for post in site.categories['Algorithms'] %}
+<li>
+  {{ post.date | date:"%d/%m/%Y" }}
+  <a href="{{ post.url }}">{{ post.title }}</a>
+</li>
+{% endfor %}

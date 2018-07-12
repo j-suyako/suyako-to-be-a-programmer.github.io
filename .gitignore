@@ -3,7 +3,7 @@ _gh_pages
 _site
 .ruby-version
 .sass-cache
-
+_drafts/*
 # Numerous always-ignore extensions
 *.diff
 *.err

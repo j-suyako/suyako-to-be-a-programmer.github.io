@@ -1,13 +1,14 @@
 ---
 layout: post
-title: A tutorial about tensorflow based on the kaggle competition —— facial keypoints detection(1)
-category: machine learning
+title: Prerequisites and the Data
+category: Machine Learning
+permalink: /blog/Machine Learning/:title
 ---
 
 作为机器学习博客的第一篇，我想将其写为kaggle和tensorflow的一个入门实践，其中会涉及到jupyter的基本运用，常用python包的基本介绍，深度神经网络构建及tensorflow的初级运用。这里所采用的案例是kaggle的入门级比赛[facial keypoints detection](https://www.kaggle.com/c/facial-keypoints-detection)，官方已经提供了一个基于Lasagne及Theano的[教程](http://danielnouri.org/notes/2014/12/17/using-convolutional-neural-nets-to-detect-facial-keypoints-tutorial/)，而这个系列博客的绝大部分工作基本都是在将原博的代码框架转到tensorflow。我会按照下面所列的目录顺序来写。
 
 * [赛题介绍及一些预备知识]()
-* [一个简单的神经网络模型]()
+* [一个简单的神经网络模型]({{baseurl}}/blog/{{page.category}}/First-Model-A-Single-Hidden-Layer)
 * [卷积神经网络模型构建]()
 * [卷积神经网络的完善与强化]()
 * [结论]()

@@ -3,12 +3,35 @@
   {% include head.html %}
   <body>
   	{% include navigator.html %}
-  	<div id="post_list">
+    <div id="hello_world">
+      <div class="container">
+        <h1>Keep Coding Keep Logging</h1>
+        <p>
+          Hi~ I'm suyako, a master student majored in civil engineering in Tongji University. I start my coding life last
+          year(2017) and hope to work as a programmer in the future. Here's my small site which recorded my study path,
+          no matter how you find this site, I hope it'll help you.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      {% for category in site.categories %}
+      {% assign curr = category | first %}
+      <a href="{{baseurl}}/{{curr}}">
+        <div class="col-lg-6">
+          <h4>{{curr}}</h4>
+          {% if curr == 'Algorithms' %}
+          <p>{{site.category_description.Algorithms}}</p>
+          {% else if curr == 'Machine Learning' %}
+          <p>{{site.category_description.Machine_Learning}}</p>
+          {% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <!-- <div id="post_list">
   		<div class="container">
-  			<div class="center">
   				{% for category in site.categories %}
   				<h1>{{ category | first}}</h1>
-  				<!-- <span>{{ category | last | size}}</span> -->
   				<ul class="arc-list">
   					{% for post in category.last %}
   					<li>
@@ -18,14 +41,6 @@
   					{% endfor %}
   				</ul>
   				{% endfor %}
-  				<!-- <h1>Algorithms</h1>
-          <li><a href="">Coursera Algorithms——week(1) Union Find</a></li>
-          <li><a href="">Coursera Algorithms——week(2) Deques and Randomized Queues</a></li>
-          <h1>Meachine Learning</h1>
-          <li><a href=""></a></li>
-          <h1>Leetcode per day</h1>
-          <li><a href="">five intresting questions in June</a></li> -->
-  			</div>
-  		<!-- </div> -->
-  	</div>
+  		</div>
+    </div> -->
   </body>

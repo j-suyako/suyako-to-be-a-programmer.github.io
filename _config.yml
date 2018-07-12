@@ -26,6 +26,11 @@ version:             2.0.0
 github:
   repo:              https://github.com/poole/poole
 
+# category description
+category_description:
+  Algorithms:        coursera algorithms series
+  Machine_Learning:  kaggle competitions and individual thinking about machine learning
+
 # Gems
 gems:
   - jekyll-paginate

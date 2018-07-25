@@ -150,7 +150,7 @@ full_index # Int64Index([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, ... 2272, 2273, 2274, 227
 from sklearn.model_selection import train_test_split
 
 # 训练集与验证集如变量名所示，参数中的test_size表示验证集占总比的20%
-X_train, X_valid, Y_train, Y_valid = train_test_split(integ_train_input, integ_train_output, test_size=0.2)
+X_train, X_valid, y_train, y_valid = train_test_split(integ_train_input, integ_train_output, test_size=0.2)
 ```
 
 第二步要做的是构造一个batch函数以期每次迭代都可以从训练集中取出一小部分来训练。这样做的理由有几个：
